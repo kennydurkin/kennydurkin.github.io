@@ -1,0 +1,66 @@
+html, body {
+	background-image: url(laptop.jpg);
+	background-size: cover;
+    background-position-x: 70%;
+    background-position-y: 50%;
+	font-family: Lato;
+	margin: 0 auto;
+}
+
+#header {
+	background-color: #288feb;
+	height: 90px;
+}
+
+.heading-text {
+	margin: 0 auto;
+	padding: 5px;
+	text-align: center;
+	color: white;
+}
+
+#container {
+	background-color: rgba(255,255,255,0.5);
+	height: calc(100vh - 92px);
+	width: calc(100vw - 2px);
+	border: 1px solid gray;
+}
+
+#message{
+	margin-top:10vh;
+	margin-left:10vw;
+	border: 1px solid black;
+	border-radius: 5px;
+	background-color: rgba(0,0,0,0.85);
+	width:50vw;
+}
+
+p {
+	color: white;
+}
+
+ul {
+	margin-top: 0;
+}
+
+li {
+	margin: 0;
+	color: white;
+}
+
+a {
+	color: #28cb75;
+	text-decoration: none;
+}
+
+.message-header {
+	margin: 0 auto;
+	padding: 10px;
+	font-size:24px;
+}
+
+.message-text {
+	margin: 0 auto;
+	padding: 5px;
+	font-size: 18px;
+}
