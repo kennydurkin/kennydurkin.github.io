@@ -1,8 +1,7 @@
-html, body {
-	background-image: url(laptop.jpg);
+body {
+	background-image: url("laptop.jpg");
+	background-position: 70% 50%;
 	background-size: cover;
-    background-position-x: 70%;
-    background-position-y: 50%;
 	font-family: Lato;
 	margin: 0 auto;
 }
