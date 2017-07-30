@@ -91,14 +91,14 @@ a {
         display: block; }
       #container .picture.mobile {
         display: none; } }
-@media screen and (max-height: 675px) {
+@media only screen and (max-height: 500px) {
   #header #header-content {
     flex-direction: row; }
     #header #header-content h1.heading-text::after {
       display: inline-block;
       content: "|";
-      padding-left: 15px; }
-
+      padding-left: 15px; } }
+@media only screen and (max-height: 675px) {
   #container {
     background-color: rgba(0, 0, 0, 0.85); }
     #container #message {

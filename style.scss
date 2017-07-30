@@ -126,7 +126,7 @@ a {	color: $kd-green; text-decoration: none; }
 }
 
 // Handle small heights
-@media screen and (max-height: 675px) {
+@media only screen and (max-height: 500px) {
 	#header {
 		#header-content {
 			flex-direction: row;
@@ -138,7 +138,9 @@ a {	color: $kd-green; text-decoration: none; }
 			}
 		}
 	}
+}
 
+@media only screen and (max-height: 675px) {
 	#container {
 		background-color: $kd-dark-grey;
 
