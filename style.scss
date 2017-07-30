@@ -1,0 +1,150 @@
+// Variables
+$header-height: 15%;
+$content-height: 85%;
+
+$kd-blue: transparentize(#288feb, 0.2);
+$kd-green: transparentize(#28cb75, 0.15);
+$kd-dark-grey: transparentize(black, 0.15);
+$kd-tumblr-blue: #324f6d;
+$kd-c4q-green: #6ec829;
+
+// Mixins
+@mixin flexboxify() {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+}
+
+@mixin mypicture() {
+	background-image: url('me.jpg');
+	background-position: 70% 25%;
+	background-size: cover;
+	opacity: 0.66;
+}
+
+// Default Styles
+body { font-family: Lato; margin: 0 auto; }
+p { color: white; }
+ul { margin-top: 0; }
+li { margin: 0; color: white; }
+a {	color: $kd-green; text-decoration: none; }
+
+// Header Styles
+#header {
+	@include flexboxify;
+
+	background-color: $kd-blue;
+
+	#header-content {
+		@include flexboxify;
+
+		.heading-text {
+			margin: 0 auto;
+			padding: 5px;
+			text-align: center;
+			color: white;
+		}
+	}
+}
+
+// Content Styles
+#container {
+	@include flexboxify;
+	width: 100%;
+	transition: background-color 0.5s ease;
+
+	#message{
+		@include flexboxify;
+		width: 100%;
+
+		background-color: $kd-dark-grey;
+
+		.message-header {
+			margin: 10px;
+			padding: 10px;
+			font-size: 32px;
+		}
+
+		.message-text {
+			margin: 0 auto;
+			padding: 5px;
+			font-size: 24px;
+
+			.link-tumblr {
+				color: $kd-tumblr-blue;
+				text-shadow: 0.5px 0.5px 0px grey;
+			}
+
+			.link-c4q {
+				color: $kd-c4q-green;
+			}
+		}
+	}
+
+	.picture {
+		@include flexboxify;
+		height: 200px;
+		width: 100%;
+
+		@include mypicture;
+
+		&.desktop {
+			display: none;
+		}
+	}
+}
+
+// Desktop styles
+@media screen and (min-width: 600px) {
+	#header {
+		flex-direction: row;
+		height: $header-height;
+	}
+
+	#container {
+		flex-direction: row;
+
+		#message {
+			height: $content-height;
+			width: 50%;
+		}
+
+		.picture {
+			height: $content-height;
+			width: 50%;
+
+			&.desktop {
+				display: block;
+			}
+
+			&.mobile {
+				display: none;
+			}
+		}
+	}
+}
+
+// Handle small heights
+@media screen and (max-height: 675px) {
+	#header {
+		#header-content {
+			flex-direction: row;
+
+			h1.heading-text::after {
+				display: inline-block;
+				content: "|";
+				padding-left: 15px;
+			}
+		}
+	}
+
+	#container {
+		background-color: $kd-dark-grey;
+
+		#message {
+			background-color: rgba(0,0,0,0);
+			height: inherit;
+		}
+	}
+}
