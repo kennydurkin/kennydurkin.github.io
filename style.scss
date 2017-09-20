@@ -18,7 +18,7 @@ $kd-c4q-green: #6ec829;
 
 @mixin mypicture() {
 	background-image: url('me.jpg');
-	background-position: 70% 25%;
+	background-position: 70% 50%;
 	background-size: cover;
 	opacity: 0.66;
 }
@@ -88,10 +88,6 @@ a {	color: $kd-green; text-decoration: none; }
 		width: 100%;
 
 		@include mypicture;
-
-		&.desktop {
-			display: none;
-		}
 	}
 }
 
@@ -113,14 +109,6 @@ a {	color: $kd-green; text-decoration: none; }
 		.picture {
 			height: $content-height;
 			width: 50%;
-
-			&.desktop {
-				display: block;
-			}
-
-			&.mobile {
-				display: none;
-			}
 		}
 	}
 }

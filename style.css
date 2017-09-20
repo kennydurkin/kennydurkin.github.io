@@ -68,11 +68,9 @@ a {
     height: 200px;
     width: 100%;
     background-image: url("me.jpg");
-    background-position: 70% 25%;
+    background-position: 70% 50%;
     background-size: cover;
     opacity: 0.66; }
-    #container .picture.desktop {
-      display: none; }
 
 @media screen and (min-width: 600px) {
   #header {
@@ -86,11 +84,7 @@ a {
       width: 50%; }
     #container .picture {
       height: 85%;
-      width: 50%; }
-      #container .picture.desktop {
-        display: block; }
-      #container .picture.mobile {
-        display: none; } }
+      width: 50%; } }
 @media only screen and (max-height: 500px) {
   #header #header-content {
     flex-direction: row; }
