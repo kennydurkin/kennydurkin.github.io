@@ -68,8 +68,6 @@ a {	color: $kd-green; text-decoration: none; }
 		}
 
 		.options-list {
-			margin-left: 10px;
-
 			.message-text {
 				margin: 0 auto;
 				padding: 5px;
@@ -120,14 +118,9 @@ a {	color: $kd-green; text-decoration: none; }
 // Handle small heights
 @media only screen and (max-height: 500px) {
 	#header {
+		height: $header-height * 2;
 		#header-content {
 			flex-direction: row;
-
-			h1.heading-text::after {
-				display: inline-block;
-				content: "|";
-				padding-left: 15px;
-			}
 		}
 	}
 }
