@@ -4,6 +4,7 @@ $content-height: 85%;
 
 $kd-blue: transparentize(#288feb, 0.2);
 $kd-green: transparentize(#28cb75, 0.15);
+$kd-dark-green: #306145;
 $kd-dark-grey: transparentize(black, 0.15);
 $kd-tumblr-blue: #324f6d;
 $kd-c4q-green: #6ec829;
@@ -34,7 +35,7 @@ a {	color: $kd-green; text-decoration: none; }
 #header {
 	@include flexboxify;
 
-	background-color: $kd-blue;
+	background-color: $kd-dark-green;
 
 	#header-content {
 		@include flexboxify;
