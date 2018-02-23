@@ -102,15 +102,16 @@ a {	color: $kd-green; text-decoration: none; }
 
 	#container {
 		flex-direction: row;
+		height: $content-height;
 
 		#message {
-			height: $content-height;
-			width: 50%;
+			height: 100%;
+			width: 100%;
 		}
 
 		.picture {
-			height: $content-height;
-			width: 50%;
+			height: 100%;
+			width: 100%;
 		}
 	}
 }
