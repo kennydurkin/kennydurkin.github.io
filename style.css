@@ -47,7 +47,8 @@ a {
     align-items: center;
     justify-content: center;
     width: 100%;
-    background-color: rgba(0, 0, 0, 0.85); }
+    background-color: rgba(0, 0, 0, 0.85);
+    justify-content: start; }
     #container #message .message-header {
       margin: 10px;
       padding: 10px;
@@ -81,7 +82,8 @@ a {
     height: 90%; }
     #container #message {
       height: 100%;
-      width: 100%; }
+      width: 100%;
+      overflow: auto; }
     #container .picture {
       height: 100%;
       width: 100%; } }
@@ -89,12 +91,14 @@ a {
   #header {
     height: 20%; }
     #header #header-content {
-      flex-direction: row; } }
+      flex-direction: row; }
+
+  #container {
+    height: 80%; } }
 @media only screen and (max-height: 675px) {
   #container {
     background-color: rgba(0, 0, 0, 0.85); }
     #container #message {
-      background-color: transparent;
-      height: inherit; } }
+      background-color: transparent; } }
 
 /*# sourceMappingURL=style.css.map */

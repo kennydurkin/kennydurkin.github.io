@@ -60,6 +60,7 @@ a {	color: $kd-green; text-decoration: none; }
 		width: 100%;
 
 		background-color: $kd-dark-grey;
+		justify-content: start;
 
 		.message-header {
 			margin: 10px;
@@ -107,6 +108,7 @@ a {	color: $kd-green; text-decoration: none; }
 		#message {
 			height: 100%;
 			width: 100%;
+			overflow: auto;
 		}
 
 		.picture {
@@ -124,6 +126,10 @@ a {	color: $kd-green; text-decoration: none; }
 			flex-direction: row;
 		}
 	}
+
+	#container {
+		height: 80%;
+	}
 }
 
 @media only screen and (max-height: 675px) {
@@ -132,7 +138,6 @@ a {	color: $kd-green; text-decoration: none; }
 
 		#message {
 			background-color: rgba(0,0,0,0);
-			height: inherit;
 		}
 	}
 }
