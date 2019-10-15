@@ -65,12 +65,13 @@ a {
   #container .picture {
     display: flex;
     flex-direction: column;
+    flex-basis: 75%;
     align-items: center;
     justify-content: center;
     height: 200px;
     width: 100%;
-    background-image: url("me.jpg");
-    background-position: 70% 50%;
+    background-image: url("me.png");
+    background-position: 50% 50%;
     background-size: cover; }
 
 @media screen and (min-width: 600px) {
