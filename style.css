@@ -70,8 +70,8 @@ a {
     justify-content: center;
     height: 200px;
     width: 100%;
-    background-image: url("me.png");
-    background-position: 50% 50%;
+    background-image: url("me.jpg");
+    background-position: 48% 50%;
     background-size: cover; }
 
 @media screen and (min-width: 600px) {
