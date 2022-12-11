@@ -1,5 +1,6 @@
 body {
   font-family: Lato;
+  background-color: rgba(0, 0, 0, 0.85); 
   margin: 0 auto; }
 
 p {
@@ -18,88 +19,49 @@ a {
 
 #header {
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
   align-items: center;
   justify-content: center;
-  height: 10%;
-  background-color: #306145; }
-  #header #header-content {
+  height: 10vh;
+  background-color: #306145;
+}
+
+#header #header-content {
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     align-items: center;
-    justify-content: center; }
-    #header #header-content .heading-text {
-      margin: 0 auto;
-      padding: 5px;
-      text-align: center;
-      color: white; }
+    justify-content: center;
+}
+
+#header #header-content .heading-text {
+  margin: 0 auto;
+  padding: 5px;
+  text-align: center;
+  color: white;
+}
 
 #container {
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
   align-items: center;
   justify-content: center;
-  width: 100%;
-  transition: background-color 0.5s ease; }
-  #container #message {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    width: 100%;
-    background-color: rgba(0, 0, 0, 0.85);
-    justify-content: start; }
-    #container #message .message-header {
-      margin: 10px;
-      padding: 10px;
-      font-size: 32px; }
-    #container #message .options-list .message-text {
-      margin: 0 auto;
-      padding: 5px;
-      font-size: 24px; }
-      #container #message .options-list .message-text .link-etsy {
-        color: #eb6d20;
-        text-shadow: 0.5px 0.5px 0px grey; }
-      #container #message .options-list .message-text .link-c4q {
-        color: #6ec829; }
-  #container .picture {
-    display: flex;
-    flex-direction: column;
-    flex-basis: 75%;
-    align-items: center;
-    justify-content: center;
-    height: 200px;
-    width: 100%;
-    background-image: url("me.jpg");
-    background-position: 48% 50%;
-    background-size: cover; }
+  height: 90vh;
+}
 
-@media screen and (min-width: 600px) {
-  #header {
-    flex-direction: row; }
+#container #message {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
 
-  #container {
-    flex-direction: row;
-    height: 90%; }
-    #container #message {
-      height: 100%;
-      width: 100%;
-      overflow: auto; }
-    #container .picture {
-      height: 100%;
-      width: 100%; } }
-@media only screen and (max-height: 500px) {
-  #header {
-    height: 20%; }
-    #header #header-content {
-      flex-direction: row; }
+#container #message .message-header {
+  margin: 40px;
+  padding: 10px;
+  font-size: 32px;
+}
 
-  #container {
-    height: 80%; } }
-@media only screen and (max-height: 675px) {
-  #container {
-    background-color: rgba(0, 0, 0, 0.85); }
-    #container #message {
-      background-color: transparent; } }
-
-/*# sourceMappingURL=style.css.map */
+#container #message .options-list .message-text {
+  margin: 0 auto;
+  padding: 5px;
+  font-size: 24px;
+}
